@@ -6,7 +6,7 @@ namespace PROG_POE_Part3.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.Discount = "10$";
+            ViewBag.Discount = "Testing";
             return View();
         }
     }
