@@ -1,0 +1,65 @@
+﻿@model IEnumerable<PROG_POE_Part3.Models.Module>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleCredits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelfStudyTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelfStudyCompleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsernameNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleCredits)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SelfStudyTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SelfStudyCompleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsernameNavigation.Username)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ModuleCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ModuleCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ModuleCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
