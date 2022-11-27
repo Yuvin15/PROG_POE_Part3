@@ -6,46 +6,45 @@
 *@
 @{
 }
-<h1>Test</h1>
-<h2>Todays discount is @ViewBag.Discount</h2>
-
+<h1>All your modules</h1>
 
 <table class="table">
     <thead>
         <tr>
             <th>
-                Module Name
+                @Html.DisplayNameFor(model => model.ModuleName)
             </th>
             <th>
-                Module Code
+                @Html.DisplayNameFor(model => model.ModuleCode)
             </th>
             <th>
-                Module Credits
+                @Html.DisplayNameFor(model => model.SelfStudyTotal)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelfStudyCompleted)
+            </th>
+            <th></th>
         </tr>
-    </thead>
-    <tbody>
-        
-        @foreach (var item in Model)
+    <thead>
+        <tbody>
+         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.)
-                </td>
-            </tr>
-        }
         <tr>
-           
+        <td>
+        @Html.DisplayFor(modelItem => item.ModuleName)
+        </td>
+        <td>
+        @Html.DisplayFor(modelItem => item.ModuleCode)
+        </td>
+        <td>
+        @Html.DisplayFor(modelItem => item.SelfStudyTotal)
+        </td>
+        <td>
+        @Html.DisplayFor(modelItem => item.SelfStudyCompleted)
+        </td>
         </tr>
-    </tbody>
+        }
 
+
+    </tbody>
 </table>

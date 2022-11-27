@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PROG_POE_Part3.Models;
 
 namespace PROG_POE_Part3.Controllers
 {
@@ -6,7 +7,7 @@ namespace PROG_POE_Part3.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.Discount = "Testing";
+            
             return View();
         }
     }
