@@ -7,7 +7,9 @@ namespace PROG_POE_Part3.Controllers
     {
         public IActionResult Index()
         {
-            
+            var entities = new ProgdbContext();
+
+            return View(entities.Modules.ToList());
             return View();
         }
     }

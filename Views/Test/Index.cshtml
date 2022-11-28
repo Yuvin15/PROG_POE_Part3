@@ -1,11 +1,8 @@
 ﻿@model IEnumerable<PROG_POE_Part3.Models.Module>
 
-
 @*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860*@
+
 <h1>All your modules</h1>
 
 <table class="table">
@@ -27,24 +24,24 @@
         </tr>
     <thead>
         <tbody>
-         @foreach (var item in Model)
+         @foreach (Module newModule in Model)
         {
         <tr>
         <td>
-        @Html.DisplayFor(modelItem => item.ModuleName)
+                            @Html.DisplayFor(modelItem => newModule.ModuleName)
         </td>
         <td>
-        @Html.DisplayFor(modelItem => item.ModuleCode)
+                            @Html.DisplayFor(modelItem => newModule.ModuleCode)
         </td>
         <td>
-        @Html.DisplayFor(modelItem => item.SelfStudyTotal)
+                            @Html.DisplayFor(modelItem => newModule.SelfStudyTotal)
         </td>
         <td>
-        @Html.DisplayFor(modelItem => item.SelfStudyCompleted)
+                            @Html.DisplayFor(modelItem => newModule.SelfStudyCompleted)
         </td>
         </tr>
         }
 
 
     </tbody>
-</table>
+</table> 
