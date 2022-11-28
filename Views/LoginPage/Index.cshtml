@@ -24,7 +24,7 @@
 
 <body>
     <div id="login-div">
-        @using(Html.BeginForm(FormMethod.Post))
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
         {
             <table>
                 <tr>
@@ -44,8 +44,8 @@
                             </td>
                                 <td>
                                 @Html.EditorFor(model => model.Password)
-                                </td>
                     </tr>
+                    <label class="field-validation-error">@Html.DisplayFor(model=> model.loginError)</label>
                     <tr>
                         <td></td>
                         <td>
