@@ -24,7 +24,7 @@ namespace PROG_POE_Part3.Controllers
 
                 if(userDetails == null)
                 {
-                    userDetails.loginError = "Wrong username/password";
+                    //userDetails.loginError = "Wrong username/password";
                     return View("Index", userModel);
                 }
                 else
