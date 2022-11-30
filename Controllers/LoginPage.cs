@@ -22,7 +22,7 @@ namespace PROG_POE_Part3.Controllers
                 var userDetails = db.Users.Where
                     (x => x.Username == userModel.Username && x.Password == userModel.Password).FirstOrDefault();
 
-                if(userDetails == null)
+                if(userDetails.Username == null)
                 {
                     //userDetails.loginError = "Wrong username/password";
                     return View("Index", userModel);

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Calculate";
+}
+
+<h1>Calculate</h1>
+
+</style>  
+<div align="center">  
+    <h2>Simple Calculatar</h2> @using (Html.BeginForm())
+        {  
+        <table>  
+            <tr>  
+                <th> Module Code </th>  
+                <td> <input type="text" id="ModuleCode" name="moduleCode" class="form-control" /> </td>  
+            </tr>  
+            <tr>  
+                <th> Module Name </th>  
+                <td> <input type="text" id="ModuleName" name="moduleName" class="form-control" /> </td>  
+            </tr> 
+             <tr>  
+                 <th> Module Credits </th>  
+                 <td> <input type="text" id="ModuleCredits" name="moduleCredits" class="form-control" /> </td>  
+            </tr>
+                <tr>  
+                     <th> Class Hours per week </th>  
+                     <td> <input type="text" id="ClassHours" name="classHours" class="form-control" /> </td>  
+                </tr>
+                    <tr>  
+                         <th> Amount of Weeks in Semster </th>  
+                         <td> <input type="text" id="WeeksAMT" name="weeksAMT" class="form-control" /> </td>  
+                    </tr>
+                           <tr>  
+                             <th> When is the start date of the Semster </th>  
+                             <td> <input type="date" id="StartDate" name="startDate" class="form-control" /> </td>  
+                        </tr>
+                            <tr>  
+                                 <th> Enter Username(Test) </th>  
+                                 <td> <input type="text" id="Username" name="username" class="form-control" /> </td>  
+                            </tr>
+            <tr>  
+                <th>Result</th>  
+                <td><input type="label" class="form-control" value="@ViewBag.Result" /> </td>  
+            </tr> 
+                <tr>  
+                    <th><input type="submit" name="Cal" value="Add Module" class="btn btn-primary" />  @*<input type="submit" name="Cal" value="Sub" class="btn btn-primary" /> </th> *@ 
+                    <th>  <input type="submit" name="Cal" value="Clear" class="btn btn-primary" />  @* <input type="submit" name="Cal" value="Div" class="btn btn-primary" /> </th> *@ 
+                </tr>
+        </table>
+        } </div>  
