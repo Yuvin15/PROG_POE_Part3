@@ -48,20 +48,7 @@ namespace PROG_POE_Part3.Controllers
 
             switch (Cal)
             {
-                case "Log in":
-
-                    String hashPass(string password)
-                    {
-                        var sha = SHA256.Create();
-
-                        var asByteArray = Encoding.Default.GetBytes(Login_Password);
-                        var hashedPassword = sha.ComputeHash(asByteArray);
-
-                        return Convert.ToBase64String(hashedPassword);
-                    }
-
-                    string password1 = hashPass(Login_Password);
-                    Console.WriteLine(password1);
+                case "Login":
 
                     SqlConnection con = new SqlConnection();
 
@@ -81,16 +68,10 @@ namespace PROG_POE_Part3.Controllers
 
                         con.Close();
                     }
+
+                    ViewBag.Result = "Success!";
                     break;
-
-                case "Clear":
-                    Login_Username = null;
-                    Login_Password = null;
-                    break ;
             }
-
-
-            ViewBag.Result = "Success!";
 
             return View();
 
