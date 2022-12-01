@@ -44,7 +44,7 @@ namespace PROG_POE_Part3.Controllers
 
                     string query = "Insert into Modules(Module_Code,Module_Name,Module_Credits,ClassHours,Self_Study_Total,Self_Study_Completed,Username) Values" +
                        "('" + ModuleCode + "','" + ModuleName + "','" + ModuleCredits + "','"
-                            + ClassHours + "','" + finalStudy + "','" + studyCompleted + "','Test')";
+                            + ClassHours + "','" + finalStudy + "','" + 0 + "','"+ newUser.Username+"')";
                     SqlDataAdapter da = new SqlDataAdapter(query, con);
                     da.SelectCommand.ExecuteNonQuery();
                     break;

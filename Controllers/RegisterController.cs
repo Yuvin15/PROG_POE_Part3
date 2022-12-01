@@ -19,8 +19,10 @@ namespace PROG_POE_Part3.Controllers
                 ProgdbContext db = new ProgdbContext();
                 db.Users.Add(obj);
                 db.SaveChanges();
+                return RedirectToAction("Home/Index");
             }
             return View(obj);
+
         }
     }
 }
