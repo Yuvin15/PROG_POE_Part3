@@ -1,83 +1,38 @@
 ﻿@model PROG_POE_Part3.Models.User
 
-
-    @*For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860*@
-
 @{
+    ViewData["Title"] = "Index";
 }
-@*<head>
-    <title>
-        Log In Page
-    </title>
-    <style>
-        #login-div 
-        {
-            position: absolute;
-            text: 150%;
-            left: 40%;
-            top: 40%;
-            border: 1px solid #ccc;
-            padding: 10px 10px;
-        }
-    </style>
-</head>
 
-<body>
-    <div id="login-div">
-        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
-        {
-            <table>
-                <tr>
-                    <td> </td>
-                    <td style="text-decoration:underline">LogIn</td>
-                </tr>
-                <td>
-                    @Html.LabelFor(model=>model.Username)
-                </td>
-                    <td>
-                    @Html.EditorFor(model => model.Username)
-                    </td>
-                    <tr>
-                        <tr>
-                            <td>
-                                @Html.LabelFor(model => model.Password)
-                            </td>
-                                <td>
-                                @Html.EditorFor(model => model.Password)
-                        <td></td>
-                        <tr>
-                                <input type="submit" name="name" value= "Log In"/>
-                                <input type="reset" name="name" value= "Clear"/>
-                        </tr>
+<h1>Index</h1>
 
-                    </tr>
-            </table>
-        }
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Log in" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-*@
+</div>
+    
+    <div>
+        <a class="btn btn-primary" asp-area="" asp-controller="Register" asp-action="Index">Register</a>
+    </div>
 
-<body>
-<h1>Calculate</h1>
-
-</style>  
-<div align="center">  
-    <h2>Simple Calculatar</h2> 
-            <table>  
-                <tr>  
-                    <th> Enter in your Username </th>  
-                    <td> <input type="text" id="Login_Username" name="login_username" class="form-control" /> </td>  
-                </tr>  
-                <tr>  
-                    <th> Enter in your Password </th>  
-                    <td> <input type="Password" id="Login_Password" name="login_password" class="form-control" /> </td> 
-                </tr> 
-                <tr>  
-                    <th>Result</th>  
-                    <td><input type="text" class="form-control" value="@ViewBag.Result" /> </td>  
-                </tr> 
-                    <tr>  
-                        <th><input type="submit" name="Cal" value="LogIn" class="btn btn-primary" />   
-                    </tr>
-            </table>
-     </div>  
-</body>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

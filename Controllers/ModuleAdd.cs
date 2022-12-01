@@ -53,7 +53,7 @@ namespace PROG_POE_Part3.Controllers
                     ModuleName = null;
                     ModuleCredits = null;
                     ClassHours = null;
-                    //WeeksAMT = null;
+                    WeeksAMT = null;
                     //Username = null;
                     break;
             }
