@@ -7,6 +7,7 @@ namespace PROG_POE_Part3.Controllers
     {
         public IActionResult Index()
         {
+            //Displays all the values of the modules in the database
             var entities = new ProgdbContext();
 
             return View(entities.Modules.ToList());

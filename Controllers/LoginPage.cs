@@ -22,12 +22,13 @@ namespace PROG_POE_Part3.Controllers
         [HttpPost]
         public ActionResult LogIn(string UsernameGet, string PasswordGet)
         {
+            //Creates all the SQL connections and establishes a connection with the database 
             SqlConnection con = new SqlConnection();
             SqlCommand com = new SqlCommand();
             SqlDataReader dr;
-
             con.ConnectionString = @"Server=tcp:cldv10083835.database.windows.net,1433;Initial Catalog=PROGDB;Persist Security Info=False;User ID=ST10083835;Password=Keenless19;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             
+            //SQL query to get the username and password from the database
                 SqlCommand cmd = new SqlCommand("select Username, Password from Users where Username='" + UsernameGet.ToString()
                     + "'and Password='" + PasswordGet.ToString() + "'", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -35,8 +36,14 @@ namespace PROG_POE_Part3.Controllers
                 da.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
+                    //If correct information given 
                     //Closes connection
                     con.Close();
+                }
+                else
+                {
+                    //If wrong information is given display in the form of a ViewBag
+                    ViewBag.Error("Wrong information inputted");
                 }
                 return View();
         }
