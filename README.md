@@ -62,7 +62,8 @@ When you click the ***Home Tab*** it will take us to the main page.(Which is the
 
 When you click the ***Privacy Tab*** it will take us to a link that will refer us to this Github Repository.
 
-![Screenshot 2022-12-02 162959](https://user-images.githubusercontent.com/101713793/205315721-ac1563e9-f69f-46b7-831d-ed16ca5dda31.png)
+![Screenshot 2022-12-02 183129](https://user-images.githubusercontent.com/101713793/205340210-7a5a0acf-bc60-431e-960a-9dfa24708373.png)
+
 
 When you click the ***Modules Tab*** it will then allow the user to insert the modules information.
 Module information consists of the:
