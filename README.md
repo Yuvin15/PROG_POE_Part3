@@ -1,3 +1,4 @@
+
 # Change Log 
 ```bash
 1. Application is now a web-based application.
@@ -29,6 +30,7 @@ their modules/subjects with the individual study hours and also allow them to up
 
 ### 2. How to open the program ###
 To access the website you will need to type in the given URL and the program will open on the Home Tab(Will be explained later on in the manual). 
+You can also open this applicationn by having Visual Studio installed and having the correct certificates and features installed. After this you can download the ZIP folder of the assignment and open it in Visual Studio and run the code.
 
 ### 3. Each component of the system explained ###
 When the program opens you will be on the Home Page.  The Home Page is where you can navigate throughout the entire program
