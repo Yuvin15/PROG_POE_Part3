@@ -37,11 +37,11 @@ When the Home Page opens you will see a navigation bar that contain the followin
 
 When you click the ***Home Tab*** it will take us to the main page.(Which is the home tab)
 
-(Image goes here)
+![Screenshot 2022-12-02 163211](https://user-images.githubusercontent.com/101713793/205316226-adda1ab6-09fb-4933-b624-684974448f53.png)
 
 When you click the ***Privacy Tab*** it will take us to a link that will refer us to this Github Repository.
 
-(Image goes here)
+![Screenshot 2022-12-02 162959](https://user-images.githubusercontent.com/101713793/205315721-ac1563e9-f69f-46b7-831d-ed16ca5dda31.png)
 
 When you click the ***Modules Tab*** it will then allow the user to insert the modules information.
 Module information consists of the:
@@ -51,6 +51,7 @@ Module information consists of the:
 4) Class Hours per week for the given module
 5) When you start the semester
 6) How many weeks there is in the Semester
+
 7) A ***Result*** box that will display the total study hours for the given module for the semster
 
 ![Screenshot 2022-12-02 155103](https://user-images.githubusercontent.com/101713793/205307900-b8a446e9-7663-4bd4-9376-772b396d220d.png)
@@ -63,7 +64,8 @@ semester.
 
 The ***Register Tab*** will allow users that have not used the system before to create a new account with no modules and information loaded.
 
-(Image goes here)
+![Screenshot 2022-12-02 163423](https://user-images.githubusercontent.com/101713793/205316731-51d04815-3669-440d-b27b-86f214747b39.png)
+
 
 The ***Log In Tab*** will allow users the already have an account log in and access the modules they have done before. If you click on the ***Modules Tab***
 you will be able to see all your modules you have entered before. The user can then update current modules and input new modules into the system. These new modules
