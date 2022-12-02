@@ -93,7 +93,7 @@ The ***Log In Tab*** will allow users the already have an account log in and acc
 you will be able to see all your modules you have entered before. The user can then update current modules and input new modules into the system. These new modules
 will be saved.
 
-(Image goes here)
+![Screenshot 2022-12-02 192552](https://user-images.githubusercontent.com/101713793/205350236-d1a33a2d-b7a2-4584-aa04-a72f5cf819a2.png)
 
 The ***Graph showing study hours*** Tab will allow users to graphically see the module and how many study hours remaining for all their modules
 
