@@ -71,7 +71,7 @@ will be saved.
 
 (Image goes here)
 
-The ***Chart*** Tab will allow users to graphically see the module and how long they got left for all their modules
+The ***Chart*** Tab will allow users to graphically see the module and how many study hours remaining for all their modules
 
 ![Screenshot 2022-12-02 134129](https://user-images.githubusercontent.com/101713793/205285182-74ab57c4-4b1f-466f-9216-bc0feb3d1399.png)
 
