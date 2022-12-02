@@ -53,13 +53,13 @@ Module information consists of the:
 6) How many weeks there is in the Semester
 7) A ***Result*** box that will display the total study hours for the given module for the semster
 
-(Image goes here)
+![Screenshot 2022-12-02 155103](https://user-images.githubusercontent.com/101713793/205307900-b8a446e9-7663-4bd4-9376-772b396d220d.png)
 
 When you click the ***Study Hours Left Tab*** it will allow the user to update the system on how much they studied of a certain module so far
 in the semester. It will then update the system and under the ***Result*** tab it will show how much study hours they have remaining for that module for the 
 semester.
 
-(Image goes here)
+![Screenshot 2022-12-02 154941](https://user-images.githubusercontent.com/101713793/205307530-f1272a00-7dcb-4e52-b07c-00db8aa4c766.png)
 
 The ***Register Tab*** will allow users that have not used the system before to create a new account with no modules and information loaded.
 
