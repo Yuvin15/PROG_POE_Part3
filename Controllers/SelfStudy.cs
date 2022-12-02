@@ -12,15 +12,10 @@ namespace PROG_POE_Part3.Controllers
             return View();
         }
 
-        public ActionResult SelfyStudyLeft()
-        {
-            return View();
-        }
-
         [HttpPost]
         public ActionResult SelfyStudyLeft(string ModuleCode, string SelfStudyComplete, String Cal)
         {
-             //All variables needed for the Controller
+            //All variables needed for the Controller
             User newUser = new User();
             double TotalStudyComplete = 0;
             double completeStudy1 = 0;
@@ -55,7 +50,7 @@ namespace PROG_POE_Part3.Controllers
                     //string query2 = ("INSERT INTO Modules(Self_Study_Completed)VALUES (" + completeStudy2 + ") " +
                     //                 "WHERE Module_Code+'"+ ModuleCode + "'");
 
-                    SqlCommand query2 = new SqlCommand("INSERT INTO Modules(Self_Study_Completed)VALUES (" + completeStudy2 + ") "
+                    SqlCommand query2 = new SqlCommand("INSERT INTO Modules(Self_Study_Completed)VALUES (" + completeStudy1 + ") "
                                                         + "WHERE Module_Code+'" + ModuleCode + "'");
 
                     query2.ExecuteNonQuery();

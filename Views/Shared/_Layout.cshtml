@@ -44,22 +44,26 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="SelfStudy" asp-action="Index">Study Hours Left</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Chart" asp-action="Index">Graph showing study hours</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Register" asp-action="Index">Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="LoginPage" asp-action="Index">Log In</a>
                         </li>
+                         
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - PROG_POE_Part3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -71,5 +75,32 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+@*<tr>
+<div>
+        <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Index">Home Page</a>
+    </div>
+</tr>
 
+<tr>
+<div>
+        <a class="btn btn-primary" asp-area="" asp-controller="ModuleAdd" asp-action="Calculate">Add a Module</a>
+    </div>
+</tr>
+
+<tr>
+<div>
+        <a class="btn btn-primary" asp-area="" asp-controller="Register" asp-action="Index">Register to the system</a>
+    </div>
+
+<tr>
+<div>
+        <a class="btn btn-primary" asp-area="" asp-controller="LoginPage" asp-action="Index">Log In</a>
+    </div>
+</tr>
+
+<tr>
+<div>
+        <a class="btn btn-primary" asp-area="" asp-controller="Chart" asp-action="Index">Graphical way of your study hours</a>
+    </div>
+</tr>*@
     @*<img src="~/Content/img/@Url.Content(model =>model.ImagePath)" style="height:50px;width:100px;"/>*@

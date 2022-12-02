@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Self-Study Left calculator";
 }
 <!DOCTYPE html>
@@ -16,26 +15,26 @@
 <div align="center">  
     <h2>Module Updater</h2> @using (Html.BeginForm())
     {  
-            <table>  
-                <tr>  
-                    <th> Module Code </th>  
-                    <td> <input type="text" id="ModuleCode" name="moduleCode" class="form-control" /> </td>  
-                </tr>  
-                <tr>  
-                    <th> Enter how much you studied for the given subject </th>  
-                    <td> <input type="text" id="SelfStudyComplete" name="selfStudyComplete" class="form-control" /> </td>  
-                </tr>
+                <table>  
                     <tr>  
-                        <th>Result</th>  
-                        <td><input type="label" class="form-control" value="@ViewBag.Result" /> </td>  
-                    </tr>
+                        <th> Module Code </th>  
+                        <td> <input type="text" id="ModuleCode" name="moduleCode" class="form-control" /> </td>  
+                    </tr>  
                     <tr>  
-                        <th><input type="submit" name="Cal" value="Add Module" class="btn btn-primary" />   
+                        <th> Enter how much you studied for the given subject </th>  
+                        <td> <input type="text" id="SelfStudyComplete" name="selfStudyComplete" class="form-control" /> </td>  
                     </tr>
-                    <tr>
-                        <th>  <input type="submit" name="Cal" value="Clear" class="btn btn-primary" />
-                    </tr>
-            </table>
+                        <tr>  
+                            <th>Result</th>  
+                            <td><input type="label" class="form-control" value="@ViewBag.Result" /> </td>  
+                        </tr>
+                        <tr>  
+                            <th><input type="submit" name="Cal" value="Add Module" class="btn btn-primary" />   
+                        </tr>
+                        <tr>
+                            <th>  <input type="submit" name="Cal" value="Clear" class="btn btn-primary" />
+                        </tr>
+                </table>
     } </div>  
 
 @*<tr>  
@@ -58,7 +57,7 @@
                  <th> Enter Username(Test) </th>  
                  <td> <input type="text" id="Username" name="username" class="form-control" /> </td>  
           </tr>*@
-                
+
 @* <tr>  
                           <th> Enter how much you finished study </th>  
                           <td> <input type="text" id="StudyDone" name="studyDone" class="form-control" /> </td>  

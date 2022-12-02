@@ -44,9 +44,9 @@ namespace PROG_POE_Part3.Controllers
                     double finalStudy2 = finalStudy1 - class_Hours;
                     finalStudy = finalStudy2 * weeks;
 
-                    string query = "Insert into Modules(Module_Code,Module_Name,Module_Credits,ClassHours,Self_Study_Total,Self_Study_Completed) Values" +
+                    string query = "Insert into Modules(Module_Code,Module_Name,Module_Credits,ClassHours,Self_Study_Total,Self_Study_Completed, Username) Values" +
                        "('" + ModuleCode + "','" + ModuleName + "','" + ModuleCredits + "','"
-                            + ClassHours + "','" + finalStudy + "','" + 0 + "')";
+                            + ClassHours + "','" + finalStudy + "','" + 0 + "'" +newUser.Username+ "')";
                     //SQL command to input into a database
                     SqlDataAdapter da = new SqlDataAdapter(query, con);
                     da.SelectCommand.ExecuteNonQuery();

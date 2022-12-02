@@ -13,7 +13,6 @@ namespace PROG_POE_Part3.Controllers
 
     public class LoginPage : Controller
     {
-
         public IActionResult Index()
         {
             return View();
@@ -39,11 +38,12 @@ namespace PROG_POE_Part3.Controllers
                     //If correct information given 
                     //Closes connection
                     con.Close();
+                    ViewBag.Results("Login Success");
                 }
                 else
                 {
                     //If wrong information is given display in the form of a ViewBag
-                    ViewBag.Error("Wrong information inputted");
+                    ViewBag.Results("Wrong information inputted");
                 }
                 return View();
         }
