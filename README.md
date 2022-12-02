@@ -1,3 +1,11 @@
+# Change Log 
+```bash
+1. Application is now a web-based application.
+2. Application makes use of Entity Framework and ADO.net.
+3. Created using Model-View-Controller.
+4. Added a graph showing the User's total hours for the 
+```
+- - - - 
 # User Manual
 
 ## Table Of Content ##
@@ -77,11 +85,22 @@ will be saved.
 The ***Graph showing study hours*** Tab will allow users to graphically see the module and how many study hours remaining for all their modules
 
 ![Screenshot 2022-12-02 134129](https://user-images.githubusercontent.com/101713793/205285182-74ab57c4-4b1f-466f-9216-bc0feb3d1399.png)
-----
+- - - -
 ### 4. References ###
 ```bash
-1) https://www.c-sharpcorner.com/article/how-to-retrieve-data-from-database-in-asp-net-web-api-using-jquery/, Farhan Ahmed
-2) https://canvasjs.com/asp-net-mvc-charts/bar-chart/, https://canvasjs.com/
-3) https://www.guru99.com/c-sharp-access-database.html, https://www.guru99.com/
-4) https://stackoverflow.com/questions/11754952/c-sharp-error-index-was-outside-the-bounds-of-the-array, Elliott
+https://www.c-sharpcorner.com/article/how-to-retrieve-data-from-database-in-asp-net-web-api-using-jquery/, Farhan Ahmed
+https://canvasjs.com/asp-net-mvc-charts/bar-chart/, https://canvasjs.com/
+https://www.guru99.com/c-sharp-access-database.html, https://www.guru99.com/
+https://stackoverflow.com/questions/11754952/c-sharp-error-index-was-outside-the-bounds-of-the-array, Elliott
+https://www.youtube.com/watch?v=dOZYOnFb56Q, Joshua Preston, 
+https://www.youtube.com/watch?v=2yEiwjUEZ78, BugArray
+https://www.codeproject.com/Tips/362436/Data-binding-in-WPF-DataGrid-control, Deepak_Sharma
+https://www.c-sharpcorner.com/UploadFile/a5f59f/how-to-create-log-in-form-in-visual-studio-and-connection-wi/, Krishna Rajput Singh 
+https://www.guru99.com/c-sharp-access-database.html
+http://www.aspdotnet-pools.com/2020/03/registration-form-in-c-with-sql-database.html
+https://www.geeksforgeeks.org/c-sharp-static-class/#
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
+https://stackoverflow.com/questions/2857832/creating-a-utilities-class#comment53872776_2857832
+https://www.codeproject.com/Articles/11582/Sql-Database-Connection-DLL-Written-in-C, Member 2260574 
+https://www.aspsnippets.com/Articles/Display-Show-data-records-from-Database-Table-in-ASPNet-MVC.aspx
 ```
