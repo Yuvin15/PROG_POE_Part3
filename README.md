@@ -29,8 +29,18 @@ study hours that should be done per modules/subjects they have entered into the 
 their modules/subjects with the individual study hours and also allow them to update the study hours and modules/subjects they are doing.
 
 ### 2. How to open the program ###
-To access the website you will need to type in the given URL and the program will open on the Home Tab(Will be explained later on in the manual). 
-You can also open this applicationn by having Visual Studio installed and having the correct certificates and features installed. After this you can download the ZIP folder of the assignment and open it in Visual Studio and run the code.
+You open this application by having Visual Studio installed and having the correct certificates and features installed. 
+
+![Screenshot 2022-12-02 180519](https://user-images.githubusercontent.com/101713793/205335455-4706e56a-b741-43de-af05-b5df364cca02.png)
+
+After this you can download the ZIP folder of the assignment and open it in Visual Studio.
+You should have these folders and attributes in your Solution Explorer.
+
+![Screenshot 2022-12-02 180543](https://user-images.githubusercontent.com/101713793/205335653-f9f92279-2c61-4e9d-869a-625474503004.png)
+
+Then you need to click F5 OR Run at the top of the Editor to start using the Program.
+
+![Screenshot 2022-12-02 180643](https://user-images.githubusercontent.com/101713793/205336104-366f1741-da67-4cb7-aafe-2682812eccea.png)
 
 ### 3. Each component of the system explained ###
 When the program opens you will be on the Home Page.  The Home Page is where you can navigate throughout the entire program
