@@ -1,12 +1,12 @@
 ﻿@model PROG_POE_Part3.Models.User
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Register Page";
 }
 
-<h1>Index</h1>
+<h1>Register here</h1>
 
-<h4>User</h4>
+<h4>Enter in your details to be a new user</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -22,13 +22,8 @@
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-            @*<div class="form-group">
-                <label asp-for="HashedPassword" class="control-label"></label>
-                <input asp-for="HashedPassword" class="form-control" />
-                <span asp-validation-for="HashedPassword" class="text-danger"></span>
-            </div>*@
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" asp-controller="Home" asp-action="Index"> Log In>
             </div>
         </form>
     </div>

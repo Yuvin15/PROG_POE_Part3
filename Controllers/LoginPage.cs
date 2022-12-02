@@ -20,39 +20,26 @@ namespace PROG_POE_Part3.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(User newUser)
+        public ActionResult LogIn(string UsernameGet, string PasswordGet)
         {
             SqlConnection con = new SqlConnection();
             SqlCommand com = new SqlCommand();
             SqlDataReader dr;
 
             con.ConnectionString = @"Server=tcp:cldv10083835.database.windows.net,1433;Initial Catalog=PROGDB;Persist Security Info=False;User ID=ST10083835;Password=Keenless19;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-            string sqlQuery = "select Username, Password from Users where Username= Username =@Username and Password = @Password";
-            con.Open();
-            SqlCommand sql_Command = new SqlCommand(sqlQuery, con);
-
-            sql_Command.Parameters.AddWithValue("@Username",newUser.Username);
-
-            sql_Command.Parameters.AddWithValue("@Password", newUser.Password);
-
-            dr = sql_Command.ExecuteReader();
-            if (dr.Read())
-            {
-                //HttpContext.Session.SetString(newUser.Username, newUser.Username.ToString());
-
-                //ISession["Username"] =newUser.Username.ToString();
-                return RedirectToAction("Home", "Index");
-            }
-            else
-            {
-                ViewData["Message"] = "Incorrect data";
-            }
-
-            con.Close();
-            return View();
+            
+                SqlCommand cmd = new SqlCommand("select Username, Password from Users where Username='" + UsernameGet.ToString()
+                    + "'and Password='" + PasswordGet.ToString() + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    //Closes connection
+                    con.Close();
+                }
+                return View();
         }
-
-
 
     }
 }

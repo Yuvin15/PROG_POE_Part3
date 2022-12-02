@@ -15,9 +15,5 @@ public partial class User
     [DataType(DataType.Password)]
     public string Password { get; set; }
     
-    //public string HashedPassword { get; set; }
-
-    //public string loginError { get; set; }
-
     public virtual ICollection<Module> Modules { get; } = new List<Module>();
 }

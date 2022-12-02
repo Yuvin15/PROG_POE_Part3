@@ -8,10 +8,8 @@ namespace PROG_POE_Part3.Controllers
 {
     public class ChartController : Controller
     {
-
             public ActionResult Index()
             {
-
             SqlConnection con =  new SqlConnection();
             con.ConnectionString = @"Server=tcp:cldv10083835.database.windows.net,1433;Initial Catalog=PROGDB;Persist Security Info=False;User ID=ST10083835;Password=Keenless19;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             con.Open();
@@ -27,9 +25,13 @@ namespace PROG_POE_Part3.Controllers
             SqlDataAdapter da = new SqlDataAdapter(graphQuery1);
             DataTable dt = new DataTable();
             da.Fill(dt);
-
             Output = dt.Rows[0][0].ToString();
-            Output2 = dt.Rows[0][4].ToString();
+
+
+            SqlDataAdapter da2 = new SqlDataAdapter(graphQuery2);
+            DataTable dt2 = new DataTable();
+            da2.Fill(dt2);
+            Output2 = dt2.Rows[0][4].ToString();
 
             double Output3 = Convert.ToDouble(Output2);
 

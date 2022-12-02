@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using PROG_POE_Part3.Models;
+using System.Data;
 
 namespace PROG_POE_Part3.Controllers
 {
@@ -22,9 +23,8 @@ namespace PROG_POE_Part3.Controllers
 
             User newUser = new User();
             double TotalStudyComplete = 0;
-            double completeStudy = 0;
+            double completeStudy1 = 0;
             double completeStudy2 = 0;
-            double completeStudy3 = 0;
 
             SqlConnection con = new SqlConnection();
 
@@ -36,25 +36,19 @@ namespace PROG_POE_Part3.Controllers
             {
                 case "Add Module":
 
-                    string query =("SELECT Self_Study_Total FROM Modules WHERE Module_Code ='" + ModuleCode + "'");
+                    SqlCommand query =new SqlCommand("SELECT Self_Study_Total FROM Modules WHERE Module_Code ='" + ModuleCode + "'");
 
-                    string queryEnd = ("SELECT Self_Study_Completed FROM Modules WHERE Module_Code ='" + ModuleCode + "'");
-
-
-                    //string query = "Insert into Modules(Module_Code,Module_Name,Module_Credits,ClassHours,Self_Study_Total,Self_Study_Completed,Username) Values" +
-                    //   "('" + ModuleCode + "','" + ModuleName + "','" + ModuleCredits + "','"
-                    //        + ClassHours + "','" + finalStudy + "','" + studyCompleted + "','Test')";
-
-                    SqlDataAdapter da = new SqlDataAdapter(query, con);
+                    SqlDataAdapter da = new SqlDataAdapter(query);
                     da.SelectCommand.ExecuteNonQuery();
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
 
-                    TotalStudyComplete = Convert.ToDouble(queryEnd);
+                    TotalStudyComplete = Convert.ToDouble(query);;
 
-                    completeStudy = Convert.ToDouble(SelfStudyComplete);
-                    completeStudy2 = TotalStudyComplete - completeStudy;
-                    completeStudy3 = completeStudy + TotalStudyComplete;
+                    completeStudy1 = Convert.ToDouble(SelfStudyComplete);
+                    completeStudy2 = TotalStudyComplete - completeStudy1;
 
-                    string query2 = ("INSERT INTO Modules(Self_Study_Completed)VALUES (" + completeStudy3 + ") " +
+                    string query2 = ("INSERT INTO Modules(Self_Study_Completed)VALUES (" + completeStudy2 + ") " +
                                      "WHERE Module_Code+'"+ ModuleCode + "'");
 
                     break;
