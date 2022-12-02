@@ -9,6 +9,7 @@
   * Privacy
   * Modules
   * Calculate Study Hours remaining
+  * Graph showing study hours
   * Register
   * Log in
 4. References 
@@ -22,18 +23,18 @@ their modules/subjects with the individual study hours and also allow them to up
 To access the website you will need to type in the given URL and the program will open on the Home Tab(Will be explained later on in the manual). 
 
 ### 3. Each component of the system explained ###
-When the program opens you will be on the Home Page. 
-
-(Image goes here)
-
+When the program opens you will be on the Home Page.  The Home Page is where you can navigate throughout the entire program
 
 When the Home Page opens you will see a navigation bar that contain the following:
 1) Home
 2) Privacy
 3) Modules
 4) Calculate Study Hours remaining
-5) Register
-6) Log in
+5) Graph showing study hours
+6) Register
+7) Log in
+
+![Screenshot 2022-12-02 173757](https://user-images.githubusercontent.com/101713793/205329894-0d74ab70-9b29-4645-a3ac-766c5bf73668.png)
 
 When you click the ***Home Tab*** it will take us to the main page.(Which is the home tab)
 
@@ -73,7 +74,7 @@ will be saved.
 
 (Image goes here)
 
-The ***Chart*** Tab will allow users to graphically see the module and how many study hours remaining for all their modules
+The ***Graph showing study hours*** Tab will allow users to graphically see the module and how many study hours remaining for all their modules
 
 ![Screenshot 2022-12-02 134129](https://user-images.githubusercontent.com/101713793/205285182-74ab57c4-4b1f-466f-9216-bc0feb3d1399.png)
 
